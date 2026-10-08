@@ -274,3 +274,53 @@ a {
   cursor: pointer;
 
 }
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Contenedor-tarjetas--encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.titulo-tarjetas {
+  font-size: 48px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+.parrafo__Contenedor-tarjetas--encabezado {
+  font-size: 17px;
+  color: var(--text-color);
+  margin-bottom: 50px;
+  padding: 0px 0px 0px 0px;
+  line-height: 2;
+}
+
+.contenedor-articulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta1, .tarjeta2, .tarjeta3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 20px;
+}
