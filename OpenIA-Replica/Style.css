@@ -16,15 +16,13 @@
   margin: 0;
   padding: 0;
 
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
-
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 /* Header Styles desktop */
@@ -37,6 +35,8 @@ body {
   position: fixed;
   top: 0;
   z-index: 100;
+  width: 100%;
+ left: 0;
     
 }
 
@@ -46,7 +46,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px;
+  padding: 10px 13%;
+  background-color: var(--background-color);
 
   cursor: pointer;
 }
@@ -56,7 +57,7 @@ body {
   flex-direction: row;
   align-items: center;
 
-  padding: 0px 250px;
+  padding: 0px;
   gap: 5px;
 
   cursor: pointer;
@@ -101,9 +102,7 @@ a {
   flex-direction: row;
 
   gap: 10px;
-  margin-right: 800px;
   
-
   font-size: 14px;
 
   position: relative;
@@ -160,6 +159,7 @@ a {
   justify-content: space-between;
   align-items: center;
 
+  padding: 0px 13%;
   width: 100%;
  
   gap: 20px;
@@ -185,18 +185,16 @@ a {
   gap: 15px;
 
   
-  padding-left: 250px;
-  
-  
 
- }
+}
+
  .contenido-principal--imagen {
   background-color: var(--primary-button-color);
   border-radius: 40px;
 
   width: 40%;
   min-width: 0;
-  margin-right: 250px;
+  
 
  }
 
@@ -216,25 +214,32 @@ a {
 
   gap: 20px;
 
-  padding-left: 250px;
   padding-top: 50px;
 
   position: relative;
+
  }
 
  .subtitulo {
   font-size: 14px;
   color: var(--text-color);
   padding: 0px 0px 0px 0px;
-  
+   
  }
 
  .titulo-principal-hero {
-  font-size: 62px;
+  font-size: 59px;
   color: var(--text-color);
   margin-bottom: 10px;
-  font-weight: bold;
+ 
   padding: 0px 0px 0px 0px;
+ }
+
+ .parrafo__contenido-principal--texto {
+  font-size: 17px;
+  color: var(--text-color);
+  padding: 0px 0px 0px 0px;
+  line-height: 2;
  }
 
  .contenido-principal--boton {
@@ -257,7 +262,7 @@ a {
 
 .flecha.hero {
   position:absolute;
-  left: 500px;
+  left: 280px;
   background-color:transparent;
   color:#0c0c0c
 }
@@ -274,6 +279,8 @@ a {
   cursor: pointer;
 
 }
+
+/*sección de tarjetas*/
 
 .contenedor-tarjetas {
   display: flex;
@@ -310,8 +317,12 @@ a {
 .contenedor-articulos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 20px;
+  width: 100%;
+  padding: 0px 13%;
 }
 
 .tarjeta1, .tarjeta2, .tarjeta3 {
@@ -320,7 +331,51 @@ a {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-
+  flex: 1;
+  min-width: 0;
   gap: 20px;
+
+}
+
+.contenedor-articulos article img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.tarjeta1--contenido, .tarjeta2--contenido, .tarjeta3--contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  min-width: 0;
+
+  gap: 10px;
+
+}
+
+h3 {
+  font-size: 22px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.subtitulo--tarjeta {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-style: italic; 
+}
+
+.tarjeta1--opciones::before, .tarjeta2--opciones::before, .tarjeta3--opciones::before {
+  font-size: 8px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  line-height: 1.5;
+  content: "• ";
+  margin-right: 5px;
 }
