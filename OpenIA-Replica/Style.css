@@ -82,8 +82,8 @@ body {
   display: flex;
   flex-direction: row;
 
-  padding: 0px 50px;
-  gap: 40px;
+  padding: 0px 20px;
+  gap: 20px;
 
   list-style: none;
   white-space: nowrap;
@@ -601,4 +601,63 @@ h3 {
 .btn.btn-primary--footer:hover {
   background-color: #333333;
   
+}
+
+/* Diseño Responsive*/
+
+/*Escritorios iguales o menores de 1759*/
+@media screen and (max-width: 1759px) {
+
+    .contenido-principal--general {
+        padding: 0 13%;
+    }
+
+    .contenido-principal {
+        width: 50%;
+    }
+
+    .contenido-principal--imagen {
+        width: 50%;
+    }
+
+    .contenido-principal--boton {
+        justify-content: flex-start;
+    }
+
+    .contenido-principal--boton button {
+        white-space: nowrap;
+    }
+
+}
+
+/* Escritorios igual o menores a 1700 */
+@media screen and (max-width: 1700px) {
+    .Contenedor-Menu {
+        padding: 10px 8%;
+    }
+}
+
+/* Escritorios igual o menores a 1450 */
+@media screen and (max-width: 1450px) {
+    .Contenedor-Menu {
+        padding: 10px 5%;
+    }
+}
+
+/* Escritorio igual o menor a 1247 desaparece el menú */
+@media screen and (max-width: 1247px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .bi.bi-search {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
 }
