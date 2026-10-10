@@ -36,7 +36,7 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
- left: 0;
+  left: 0;
     
 }
 
@@ -456,10 +456,91 @@ h3 {
 
 .bi.bi-arrow-up-right.flecha-tarjeta {
   position:absolute;
-  right: 110px;
-  top: 11px;
+  right: 120px;
+  top: 40px;
   color: #0c0c0c;
   font-size: 10px;
   font-weight: bold;
+
+}
+
+/*Footer*/
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  padding: 10px 13%;
+  width: 100%;
+
+}
+
+.contenido-footer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+.contenido-footer--informacion {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  gap: 20px;
+
+}
+
+.ancla__contenido-footer--informacion {
+  text-decoration: underline 1px solid #ffffff;
+}
+
+.btn-footer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.btn.btn-primary--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-button-color);
+  color: var(--text-button-primary-color);
+
+  border: 2px solid var(--primary-button-color);
+  padding: 10px 20px;
+  padding-left: 50px;
+  border-radius: 20px;
+
+  gap: 10px;
+  cursor: pointer;
+
+}
+
+.idioma {
+  color: #ffffff;
+  
+}
+
+.region {
+  color: #8F8F8F;
+}
+
+.bi.bi-globe {
+  position: absolute;
+  top: 30%;
+  left:275px;
+  font-size: 12px;
 
 }
