@@ -121,6 +121,7 @@ a {
   border-radius: 20px;
 
   cursor: pointer;
+  transition: var(--background-color) 0.3ms ease ;
 }
 
 .bi.bi-chevron-down {
@@ -129,6 +130,12 @@ a {
   top: 15px;
   
 }
+
+.btn.btn-primary:hover {
+  background-color: #333333;
+  
+}
+
 
 .btn.btn-secondary {
   background-color: var(--secondary-button-color);
@@ -139,6 +146,12 @@ a {
   border-radius: 20px;
 
   cursor: pointer;
+  transition: all 0.3ms ease ;
+}
+
+.btn.btn-secondary:hover {
+  filter: opacity(0.8);
+  
 }
 
 /* hero section */
@@ -244,6 +257,7 @@ a {
 
  .contenido-principal--boton {
     position: relative;
+    transition: var(--background-color) 0.3ms ease ;
  }
 
 .btn.btn-secondary__contenido-principal--boton {
@@ -256,8 +270,15 @@ a {
   padding-right: 50px;
 
   cursor: pointer;
+  transition: all 0.3ms ease ;
 
 }
+
+.btn.btn-secondary__contenido-principal--boton:hover {
+  filter: opacity(0.8)
+
+}
+
 
 
 .flecha.hero {
@@ -278,6 +299,11 @@ a {
 
   cursor: pointer;
 
+}
+
+.btn.btn-primary__contenido-principal--boton:hover {
+  background-color: #333333;
+  
 }
 
 /*sección de tarjetas*/
@@ -452,6 +478,8 @@ h3 {
 
 
   cursor: pointer;
+  transition: all 0.3ms ease ;
+  
 }
 
 .bi.bi-arrow-up-right.flecha-tarjeta {
@@ -462,6 +490,10 @@ h3 {
   font-size: 10px;
   font-weight: bold;
 
+}
+
+.btn.btn-secondary--tarjeta:hover {
+  filter: opacity(0.8);
 }
 
 /*Footer*/
@@ -525,6 +557,7 @@ h3 {
 
   gap: 10px;
   cursor: pointer;
+  transition: var(--background-color) 0.3ms ease ;
 
 }
 
@@ -543,4 +576,9 @@ h3 {
   left:275px;
   font-size: 12px;
 
+}
+
+.btn.btn-primary--footer:hover {
+  background-color: #333333;
+  
 }
