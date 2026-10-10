@@ -97,6 +97,26 @@ a {
 
 }
 
+.nav-links a {
+   transition: opacity 0.3s ease;
+}
+
+.nav-links:hover a {
+  opacity: 0.5;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.bi.bi-search {
+  color: #616161;
+  transition: color 0.3s ease;
+}
+
+.bi.bi-search:hover {
+  color: #ffffff;
+}
 .btn-header {
   display: flex;
   flex-direction: row;
