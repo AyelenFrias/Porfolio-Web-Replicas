@@ -812,14 +812,14 @@ h3 {
 
 @media screen and (max-width: 589px) {
 
-    /* BOTONES DEL HERO: uno debajo del otro */
+    /* BOTONES DEL HERO */
     .contenido-principal--boton {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    /* BOTÓN DE LA PRIMERA TARJETA: texto en dos líneas */
+    /* BOTÓN DE LA PRIMERA TARJETA */
     .contenedor-articulos .tarjeta1 button {
         max-width: 220px;
         white-space: normal;
@@ -827,17 +827,19 @@ h3 {
         line-height: 1.2;
     }
 
-    /* FOOTER: elementos uno debajo del otro */
+    /* FOOTER */
     .contenedor-footer {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 25px;
     }
 
     /* COPYRIGHT Y COOKIES */
     .contenido-footer--informacion {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
         gap: 8px;
     }
 }
