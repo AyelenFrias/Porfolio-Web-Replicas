@@ -716,7 +716,7 @@ h3 {
         margin-right: 20px;
     }
 
-    /* Botones del hero */
+    
     .contenido-principal--boton {
         flex-direction: column;
         align-items: center;
@@ -729,12 +729,12 @@ h3 {
 /* Escritorio igual o menor a 767 desaparecen botones */
 @media screen and (max-width: 767px) {
 
-    /* HEADER: ocultar los dos botones */
+    
     .Contenedor-Menu .btn {
         display: none;
     }
 
-    /* TARJETAS - texto del botón ocupe dos líneas */
+    
     .contenedor-articulos button {
         white-space: normal;
         height: auto;
@@ -747,7 +747,7 @@ h3 {
     }
 
 
-    /* FOOTER: copyright y cookies en dos líneas */
+   
     .contenido-footer--informacion {
         display: flex;
         flex-direction: column;
@@ -775,7 +775,7 @@ h3 {
 /* Escritorio igual o menor a 751 desaparece el menú */
 @media screen and (max-width: 751px) {
 
-    /* HERO: texto arriba, imagen abajo */
+    
     .contenido-principal--general {
         flex-direction: column;
         align-items: stretch;
@@ -787,7 +787,7 @@ h3 {
         width: 100%;
     }
 
-    /* Botones nuevamente en una fila */
+    
     .contenido-principal--boton {
         flex-direction: row;
         justify-content: flex-start;
@@ -797,7 +797,7 @@ h3 {
         padding-top: 30px;
     }
 
-    /* TARJETAS: dos arriba, una abajo */
+   
     .contenedor-articulos {
         flex-wrap: wrap;
     }
@@ -820,7 +820,7 @@ h3 {
         gap: 20px;
     }
 
-    /* BOTÓN DE LA PRIMERA TARJETA */
+    
     .contenedor-articulos .tarjeta1 button {
         max-width: 220px;
         white-space: normal;
@@ -828,7 +828,7 @@ h3 {
         line-height: 1.2;
     }
 
-    /* Primer botón de las tarjetas */
+    
     .tarjeta1 .btn-secondary--tarjeta {
     display: flex;
     align-items: center;
@@ -849,14 +849,14 @@ h3 {
     width: 220px;
 }
 
-    /* FOOTER */
+    
     .contenedor-footer {
         flex-direction: column;
         align-items: center;
         gap: 25px;
     }
 
-    /* COPYRIGHT Y COOKIES */
+    
     .contenido-footer--informacion {
         flex-direction: row;
         justify-content: center;
@@ -869,7 +869,7 @@ h3 {
 /* Escritorio igual o menor a 567 desaparece el menú */
 @media screen and (max-width: 567px) {
 
-    /* Tarjetas una debajo de la otra */
+   
     .contenedor-articulos {
         flex-direction: column;
         gap: 20px;
@@ -882,7 +882,7 @@ h3 {
         flex: none;
     }
 
-     /* Botón de la primera tarjeta */
+    
 .contenedor-articulos .tarjeta1 button {
     width: 100%;
     max-width: none;
