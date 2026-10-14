@@ -188,7 +188,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  margin-top: 200px;
+  margin-top: 100px;
 
 }
 
@@ -810,6 +810,7 @@ h3 {
 
 }
 
+/* Escritorio igual o menor a 589 desaparece el menú */
 @media screen and (max-width: 589px) {
 
     /* BOTONES DEL HERO */
@@ -827,6 +828,27 @@ h3 {
         line-height: 1.2;
     }
 
+    /* Primer botón de las tarjetas */
+    .tarjeta1 .btn-secondary--tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    white-space: normal;
+    padding: 10px 20px;
+}
+
+
+   .tarjeta1 .bi-arrow-up-right {
+    flex-shrink: 0;
+}
+
+   .tarjeta1 .btn-secondary--tarjeta {
+    gap: 12px;
+    white-space: normal;
+    width: 220px;
+}
+
     /* FOOTER */
     .contenedor-footer {
         flex-direction: column;
@@ -842,4 +864,59 @@ h3 {
         flex-wrap: nowrap;
         gap: 8px;
     }
+}
+
+/* Escritorio igual o menor a 567 desaparece el menú */
+@media screen and (max-width: 567px) {
+
+    /* Tarjetas una debajo de la otra */
+    .contenedor-articulos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3 {
+        width: 100%;
+        flex: none;
+    }
+
+     /* Botón de la primera tarjeta */
+.contenedor-articulos .tarjeta1 button {
+    width: 100%;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.tarjeta1 .contenedor-btn.btn-secondary--tarjeta {
+    width: 100%;
+}
+}
+
+/* Escritorio igual o menor a 308 desaparece el menú */
+@media screen and (max-width: 308px) {
+
+    .contenedor-articulos .tarjeta1 button {
+        white-space: normal;
+        line-height: 1.2;
+        max-width: none;
+        width: 100%;
+    }
+
+}
+
+/* Escritorio igual o menor a 307 desaparece el menú */
+@media screen and (max-width: 307px) {
+
+    .tarjeta2 .btn.btn-secondary--tarjeta {
+        display: block;
+        width: 100%;
+        max-width: none;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+        padding: 10px 55px;
+    }
+
 }
